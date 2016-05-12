@@ -15,7 +15,8 @@ Pod::Spec.new do |spec|
   non_arc_files = 'Source/Factory/Internal/NSInvocation+TCFInstanceBuilder.{h,m}'
   spec.ios.exclude_files = 'Source/osx', non_arc_files
   spec.osx.exclude_files = 'Source/ios', non_arc_files
-
+  spec.tvos.exclude_files = 'Source/osx', non_arc_files
+  
   spec.requires_arc = true
   spec.subspec 'no-arc' do |sna|
     sna.requires_arc = false
