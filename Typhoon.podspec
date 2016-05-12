@@ -9,7 +9,8 @@ Pod::Spec.new do |spec|
 
   spec.ios.deployment_target = '5.0'
   spec.osx.deployment_target = '10.7'
-
+  spec.tvos.deployment_target = '9.0'
+  
   spec.source_files = 'Source/**/*.{h,m}'
   non_arc_files = 'Source/Factory/Internal/NSInvocation+TCFInstanceBuilder.{h,m}'
   spec.ios.exclude_files = 'Source/osx', non_arc_files
